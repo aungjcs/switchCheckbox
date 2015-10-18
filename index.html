@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ja" ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <title>Simple switch checkbox</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="./index.js"></script>
+</head>
+
+<body ng-init="cbxStatus=true;switchCbx=true;">
+    <switch-checkbox ng-model="switchCbx" ng-disabled="!cbxStatus"></switch-checkbox>
+    checked:{{switchCbx}}
+    <br>
+    <label>
+        <input type="checkbox" ng-model="cbxStatus"> on
+    </label>
+    <label>
+        <input type="checkbox" ng-model="switchCbx"> val
+    </label>
+</body>
+
+</html>
