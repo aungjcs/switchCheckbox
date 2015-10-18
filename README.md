@@ -1,2 +1,3 @@
 # switchCheckbox
-Simple switch checkbox
+Simple switch checkbox  
+Pratice of angular directive.
